@@ -26,7 +26,6 @@ git add hotfix.txt
 git commit -m "Fix payment gateway issue"
 git tag -a v1.1.1 -m "Hotfix v1.1.1: Payment Gateway Issue"
 
-git checkout main
 git checkout -b develop
 git merge hotfix-payment-gateway
 
