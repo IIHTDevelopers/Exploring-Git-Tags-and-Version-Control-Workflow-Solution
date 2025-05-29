@@ -15,18 +15,18 @@ echo "added logic for giving discount" > discount.txt
 git add discount.txt
 git commit -m "Add discount coupons feature"
 
-git checkout master
+git checkout main
 git merge discount
 git tag -a v1.1.0 -m "Release v1.1.0: Discount Coupons Feature"
 
-git checkout master
+git checkout main
 git checkout -b hotfix-payment-gateway
 echo "fixed payment gateway issue" > hotfix.txt
 git add hotfix.txt
 git commit -m "Fix payment gateway issue"
 git tag -a v1.1.1 -m "Hotfix v1.1.1: Payment Gateway Issue"
 
-git checkout master
+git checkout main
 git checkout -b develop
 git merge hotfix-payment-gateway
 
